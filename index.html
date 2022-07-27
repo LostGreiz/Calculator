@@ -1,64 +1,44 @@
-<html>
-    <head>
-        <title>iphone calculator</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="calculator_container">
-            <div class="calculator_iphone">
-                <!--display the number-->
-                <div class="calculator_input_display">
-                    <textarea cols="40" rows="7" id="calculator_input_Number_Previews"></textarea>
-                    <input type="text" id="calculator_input_Number">
-                </div>
-                <!--calculator button-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="styles.css">
 
-                <div class="calculator_button">
-                    <!--left button-->
-                    <div class="calculator_button_left3">
-                        <div class="calculator_button_left3_Top">
-                            <!--clear the input box-->
-                            <div class="calculator_button_FixedSize_Top" id="Calculator_input_AC">AC</div>
-                            <div class="calculator_button_FixedSize_Top" onclick="display('+/-')">+/-</div>
-                            <div class="calculator_button_FixedSize_Top" onclick="display('%')">%</div>
-                        </div>
+<div id="calculator" class="calculator">
+    <div class="result"><p></p></div>
+    
+    <span class="clear grey">AC</span>
+    <span class="grey">+/-</span>
+    <span class="grey">%</span>
+    <span class="operator">÷</span>
+  
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span class="operator">x</span>
+    
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span class="operator">-</span>
+    
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span class="operator">+</span>
+    
+    <span class="double">0</span>
+    <span>.</span>
+    <span class="operator">=</span>
+    
+  </div>
 
-                        <!--middle button number-->
-                        <div class="calculator_button_left_Number">
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('9')">7</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('8')">8</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('7')">9</div>
-
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('6')">4</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('5')">5</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('4')">6</div>
-
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('3')">1</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('2')">2</div>
-                            <div class="calculator_button_Fixedsize_Number" onclick="display('1')">3</div>
-                        </div>
-
-                        <!--bottom button left-->
-                        <div class="calculator_button_left3_bottom">
-                            <div class="calculator_button_FixedSize_bottom" id="calculator_button_FixedSize_bottom_zero" onclick="display('0')">0</div>
-                            <div class="calculator_button_FixedSize_bottom" onclick="display('.')">.</div>
-                        </div>
-                    </div>
-                    <!--right button -->
-                    <div class="calculator_button_Right">
-                        <div class="calculator_button_FixedSize_Orange" onclick="display('/')">÷</div>
-                        <div class="calculator_button_FixedSize_Orange" onclick="display('*')">×</div>
-                        <div class="calculator_button_FixedSize_Orange" onclick="display('-')">-</div>
-                        <div class="calculator_button_FixedSize_Orange" onclick="display('+')">+</div>
-                        <!--answer button-->
-                        <div class="calculator_button_FixedSize_Orange" onclick="displaySolve()">=</div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-           <script src="script.js"></script>
-    </body>
+  <script src="script.js"></script>
+</body>
 </html>
